@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking the Page</title>
+    <link rel="stylesheet" href="./checking.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="box2">
+            <h1>😎 랜덤숫자 게임 💻</h1>
+            <h3>더 높은 숫자로 컴퓨터를 이겨보세요!</h4>
+            <div class="box3">
+                <div class="result1">
+                    <h3>😎 유저 : </h3>
+                    <div id="what1" style="font-weight: 600; font-size: 30px; color: red;"></div>
+                </div>
+                <div class="result2">
+                    <h3>💻 컴퓨터 : </h3>
+                    <div id="what2" style="font-weight: 600; font-size: 30px; color: red;"></div>
+                </div>
+            </div>
+            <div id="result">
+            </div>
+            <h1>기록</h1>
+
+            <table border="1" style="border: solid red;">
+                <tr>
+                    <th>진행 횟수</th>
+                    <th>승</th>
+                    <th>패</th>
+                    <th>무승부</th>
+                    <th class="victory">승률</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="tcount"></div>
+                    </td>
+                    <td>
+                        <div id="tWin"></div>
+                    </td>
+                    <td>
+                        <div id="tLose"></div>
+                    </td>
+                    <td>
+                        <div id="tDraw"></div>
+                    </td>
+                    <td>
+                        <div id="t"></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="bt">
+                <button onclick="start()" id="go">GO!!</button>
+                <button onclick="reset()" id="reset">RESET!!</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./checking.js"></script>
+
+</html>
